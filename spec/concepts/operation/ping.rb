@@ -10,13 +10,7 @@ describe Greeting::Operation::Ping do
   it 'failure to be true' do
     result = described_class.call()
 
-    expect(result.failure?).to be_truthy
-  end
-
-  it "Greets in hindi" do
-    result = described_class.(params: { lang: 'hn' })
-
-    expect(result[:message]).to eq("नमस्ते दुनिया")
+    expect(result.failure?).to  be_truthy
   end
 
 end
